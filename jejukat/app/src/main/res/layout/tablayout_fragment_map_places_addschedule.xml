@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rv_addschedule_show_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="15dp"
+
+        android:text="여행지를 추가해보세요"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/search_pick_place"/>
+        <Button
+            android:id="@+id/btn_AddSchedule_add_place"
+            android:text="장소 검색"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+</LinearLayout>
+

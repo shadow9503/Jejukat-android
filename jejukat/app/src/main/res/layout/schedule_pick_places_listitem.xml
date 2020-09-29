@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true"
+    android:orientation="vertical">
+
+
+
+    <!--place 리스트 아이템-->
+    <LinearLayout
+        android:id="@+id/ll_scheduledetails_searchplace_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+<!--            <View-->
+<!--                android:layout_width="2dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#8632C1ED"/>-->
+
+            <TextView
+                android:id="@+id/tv_scheduledetails_show_number"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/place_number_frame"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <!--place 정보 묶음-->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--place 타이틀-->
+
+
+            <!--카테고리 / 지역 이름-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_scheduledetails_show_cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="cat1 | cat2"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"/>
+                <TextView
+                    android:id="@+id/tv_scheduledetails_show_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="타이틀"
+                    android:gravity="left|center"
+                    android:paddingLeft="17dp"/>
+
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_scheduledetails_show_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="15dp"
+                    android:text="지역"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"/>
+
+
+        </LinearLayout>
+
+    <!--삭제 버튼 invisible-->
+        <TextView
+            android:id="@+id/tv_scheduledetails_remove_place"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:text="X"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="42dp"
+        android:background="#DFDFDF" />
+
+</LinearLayout>

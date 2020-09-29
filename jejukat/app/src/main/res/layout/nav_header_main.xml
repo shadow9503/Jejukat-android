@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/colorIvory"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp">
+        <ImageView
+            android:id="@+id/img_navHeader"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="nav_header"
+            android:paddingTop="8dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/icon_user_null" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_navHeader_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="비회원"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_navHeader_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하단의 로그인 버튼을 눌러주세요."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp" />
+</LinearLayout>

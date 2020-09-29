@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "482735618325",
+    "firebase_url": "https://jejukat.firebaseio.com",
+    "project_id": "jejukat",
+    "storage_bucket": "jejukat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482735618325:android:27d2a5052e4b9e645e511c",
+        "android_client_info": {
+          "package_name": "com.androidlec.jejukat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482735618325-93d9sqseq6pn0m02std9hepql6jd697c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPjze_cxWTJO-eE0XlnROGA-9NKuoR2kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482735618325-93d9sqseq6pn0m02std9hepql6jd697c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

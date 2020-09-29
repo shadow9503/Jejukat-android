@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="6dp">
+
+    <LinearLayout
+        android:id="@+id/layout_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layout_recycle_text"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_recycle_main_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/text_recycle_main_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_recycle_main_cat"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

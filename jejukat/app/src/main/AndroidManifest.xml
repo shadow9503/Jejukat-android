@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidlec.jejukat">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_jejukat"
+        android:roundIcon="@drawable/logo_jejukat"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="9337ca3ae14ce6ffd03496564c6133c3" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAjXihgqrvBvf88uG57Cqqi07SP7yDRqcI" />
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.androidlec.jejukat.Activity_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.androidlec.jejukat.Activity_Main"/>
+        <activity android:name="com.androidlec.jejukat.Activity_Login"/>
+        <activity android:name=".Activity_Addplace"/>
+        <activity android:name=".Activity_Search"/>
+        <activity android:name=".Activity_Detail_Place"/>
+        <activity android:name=".Activity_LikeList"/>
+        <activity android:name=".Activity_ViewedList"/>
+        <activity android:name=".Activity_MyPlaceList"/>
+        <activity android:name=".Activity_MyScheduleList"/>
+        <activity android:name=".Activity_AddSchedule"/>
+        <activity android:name=".Activity_Search2Pick"/>
+        <activity android:name=".Activity_Detail_Schedule"/>
+        <activity android:name=".Activity_NotificationList"/>
+        <activity android:name=".Activity_Notification_Selected"/>
+
+    </application>
+
+</manifest>

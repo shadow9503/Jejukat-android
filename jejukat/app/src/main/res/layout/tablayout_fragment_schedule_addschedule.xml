@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/sv_addschedule_fragmentschedule"
+    >
+
+<!--상세정보-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="글 작성"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/ed_addschedule_input_context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="10dp"
+            android:hint="당신의 여행을 소개해주세요."
+            android:textAlignment="textStart"
+            android:textSize="18dp"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_addschedule_load_image"
+                android:text="사진 추가"
+                android:textSize="20dp"
+                android:gravity="left|center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-18dp"
+                android:background="@drawable/add_image_blue"/>
+            <Button
+                android:id="@+id/btn_addschedule_clear_image"
+                android:text="초기화"
+                android:textSize="15dp"
+                android:gravity="right|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <com.androidlec.jejukat.CustomGridView
+            android:id="@+id/gv_addschedule_input_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:numColumns="3"/>
+
+    </LinearLayout>
+
+</ScrollView>
